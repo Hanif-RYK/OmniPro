@@ -129,10 +129,7 @@ header > div.max-w-7xl {
     box-shadow: 0 4px 10px -2px rgba(37, 99, 235, 0.35) !important;
   }
   #mobileMenuBtn {
-    display: inline-flex !important;
-    order: 3 !important;
-    padding: 0.4rem !important;
-    flex-shrink: 0 !important;
+    display: none !important;
   }
   /* Row 2: Horizontal Scrolling Navigation Bar */
   header nav:not(#mobileNav) {
@@ -203,4 +200,14 @@ body {
 }
 body.page-fade-out {
   opacity: 0 !important;
+}
+
+/* Mobile header fix: logo first, then cart + menu actions, then scrolling nav */
+@media (max-width: 699px) {
+  header > div.max-w-7xl > a:first-child { order: 1 !important; flex-shrink: 1 !important; min-width: 0 !important; }
+  header > div.max-w-7xl > a:first-child > span:last-child { font-size: 1.05rem !important; white-space: nowrap !important; }
+  header > div.max-w-7xl > div.flex { order: 2 !important; margin-left: auto !important; margin-right: 0 !important; gap: 0.5rem !important; flex-shrink: 0 !important; }
+  header > div.max-w-7xl > div.flex > a.hidden { display: none !important; }
+  header [data-cart-trigger] { display: inline-flex !important; align-items: center !important; gap: 0.35rem !important; padding: 0.45rem 0.6rem !important; }
+  header [data-cart-trigger] svg { width: 1.25rem !important; height: 1.25rem !important; flex-shrink: 0 !important; }
 }
