@@ -349,6 +349,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── OmniPro Live Studio Customizer Listener (postMessage + Smooth Navigation) ───
   function applyStudioCustomization(data) {
     if (!data) return;
+    // Values come from the URL hash or another window, so accept safe formats only.
+    if (data.color && !/^#[0-9a-f]{3,8}$/i.test(data.color)) data.color = null;
+    if (data.font && !/^[a-z0-9 ]{1,40}$/i.test(data.font)) data.font = null;
+    if (data.brandName) data.brandName = String(data.brandName).slice(0, 60);
     if (data.color) {
       document.documentElement.style.setProperty('--primary-color', data.color);
       document.documentElement.style.setProperty('--primary-hover', data.color);
@@ -425,6 +429,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('message', (e) => {
+    // Only the OmniPro preview hub (the parent frame) may customize this page.
+    if (window.parent === window || e.source !== window.parent) return;
     if (e.data && e.data.type === 'OMNI_CUSTOMIZE') {
       applyStudioCustomization(e.data);
     }

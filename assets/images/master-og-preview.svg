@@ -16,9 +16,9 @@
   <rect x="110" y="115" width="56" height="56" rx="14" fill="#2563eb"/>
   <text x="138" y="154" font-family="system-ui, sans-serif" font-size="32" font-weight="900" fill="#ffffff" text-anchor="middle">Ω</text>
   <text x="185" y="152" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="1">OMNIPRO MATRIX</text>
-  <rect x="110" y="200" width="280" height="34" rx="17" fill="#2563eb" fill-opacity="0.15" stroke="#2563eb" stroke-opacity="0.35"/>
-  <text x="250" y="222" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#60a5fa" text-anchor="middle" letter-spacing="1">5-IN-1 MASTER COMMERCIAL SUITE</text>
-  <text x="110" y="310" font-family="system-ui, sans-serif" font-size="50" font-weight="900" fill="#ffffff" letter-spacing="-1">Production-Grade HTML5 & Tailwind Suite</text>
+  <rect x="110" y="200" width="313" height="34" rx="17" fill="#2563eb" fill-opacity="0.15" stroke="#2563eb" stroke-opacity="0.35"/>
+  <text x="266.5" y="222" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#60a5fa" text-anchor="middle" letter-spacing="1">5-IN-1 MASTER COMMERCIAL SUITE</text>
+  <text x="110" y="310" font-family="system-ui, sans-serif" font-size="36" font-weight="900" fill="#ffffff" letter-spacing="-1">Production-Grade HTML5 &amp; Tailwind Suite</text>
   <text x="110" y="375" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#94a3b8">Corporate • Construction • SaaS • Healthcare • Modern eCommerce</text>
   <line x1="110" y1="440" x2="1030" y2="440" stroke="#334155" stroke-width="1"/>
   <text x="110" y="495" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#64748b">25+ Clean Semantic Pages • Pre-Compiled CSS • Ready to Deploy</text>

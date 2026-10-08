@@ -162,7 +162,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize minimum date as today
     if (bookingDate) {
-      const today = new Date().toISOString().split('T')[0];
+      const now = new Date();
+      const today = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
       bookingDate.min = today;
       if (!bookingDate.value) {
         bookingDate.value = today;
@@ -192,11 +193,19 @@ document.addEventListener('DOMContentLoaded', () => {
       const selectedSlot = selectedSlotInput ? selectedSlotInput.value : '10:00 AM';
 
       if (!patientName || !patientName.value.trim()) {
-        alert('Please provide patient name.');
+        if (patientName) {
+          patientName.setCustomValidity('Please provide patient name.');
+          patientName.reportValidity();
+          patientName.addEventListener('input', () => patientName.setCustomValidity(''), { once: true });
+        }
         return;
       }
       if (!doctorSelect || !doctorSelect.value) {
-        alert('Please select a physician.');
+        if (doctorSelect) {
+          doctorSelect.setCustomValidity('Please select a physician.');
+          doctorSelect.reportValidity();
+          doctorSelect.addEventListener('change', () => doctorSelect.setCustomValidity(''), { once: true });
+        }
         return;
       }
 
@@ -238,6 +247,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       bookingForm.reset();
+      if (bookingDate) bookingDate.value = bookingDate.min;
       if (departmentSelect) {
         departmentSelect.dispatchEvent(new Event('change'));
       }
@@ -406,6 +416,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── OmniPro Live Studio Customizer Listener (postMessage + Smooth Navigation) ───
   function applyStudioCustomization(data) {
     if (!data) return;
+    // Values come from the URL hash or another window, so accept safe formats only.
+    if (data.color && !/^#[0-9a-f]{3,8}$/i.test(data.color)) data.color = null;
+    if (data.font && !/^[a-z0-9 ]{1,40}$/i.test(data.font)) data.font = null;
+    if (data.brandName) data.brandName = String(data.brandName).slice(0, 60);
     if (data.color) {
       document.documentElement.style.setProperty('--primary-color', data.color);
       document.documentElement.style.setProperty('--primary-hover', data.color);
@@ -482,6 +496,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('message', (e) => {
+    // Only the OmniPro preview hub (the parent frame) may customize this page.
+    if (window.parent === window || e.source !== window.parent) return;
     if (e.data && e.data.type === 'OMNI_CUSTOMIZE') {
       applyStudioCustomization(e.data);
     }

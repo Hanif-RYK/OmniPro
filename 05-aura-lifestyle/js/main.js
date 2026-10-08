@@ -185,7 +185,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     cartItemsContainer.innerHTML = cart.map((item) => `
       <div class="p-4 rounded-2xl border border-slate-200 bg-white shadow-sm flex items-center gap-4 transition-all">
-        <div class="w-16 h-16 rounded-xl bg-slate-100 border border-slate-200/80 flex items-center justify-center font-bold text-xs text-primary font-display flex-shrink-0">
+        <div class="w-16 h-16 rounded-xl bg-slate-100 border border-slate-200/80 flex items-center justify-center text-2xl flex-shrink-0">
           ${item.category === 'ceramics' ? '🏺' : item.category === 'apparel' ? '👘' : '💡'}
         </div>
         <div class="flex-1 min-w-0">
@@ -479,6 +479,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── OmniPro Live Studio Customizer Listener (postMessage + Smooth Navigation) ───
   function applyStudioCustomization(data) {
     if (!data) return;
+    // Values come from the URL hash or another window, so accept safe formats only.
+    if (data.color && !/^#[0-9a-f]{3,8}$/i.test(data.color)) data.color = null;
+    if (data.font && !/^[a-z0-9 ]{1,40}$/i.test(data.font)) data.font = null;
+    if (data.brandName) data.brandName = String(data.brandName).slice(0, 60);
     if (data.color) {
       document.documentElement.style.setProperty('--primary-color', data.color);
       document.documentElement.style.setProperty('--primary-hover', data.color);
@@ -555,6 +559,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('message', (e) => {
+    // Only the OmniPro preview hub (the parent frame) may customize this page.
+    if (window.parent === window || e.source !== window.parent) return;
     if (e.data && e.data.type === 'OMNI_CUSTOMIZE') {
       applyStudioCustomization(e.data);
     }
