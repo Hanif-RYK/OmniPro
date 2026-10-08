@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medix Health - Healthcare & Medical Template</title>
+  <meta name="description" content="Medix Health - Advanced Multispecialty Clinic & Care Center. A clean, trust-inspiring healthcare layout with direct doctor appointment booking modal, department switcher, physician directory, and emergency banner.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Medix Health - Healthcare & Medical Template">
+  <meta property="og:description" content="Medix Health - Advanced Multispecialty Clinic & Care Center. A clean, trust-inspiring healthcare layout with direct doctor appointment booking modal, department switcher, physician directory, and emergency banner.">
+  <meta property="og:image" content="./assets/images/og-preview.svg">
+  <meta property="og:image:alt" content="Medix Health - Healthcare & Medical Template Preview">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Medix Health - Healthcare & Medical Template">
+  <meta name="twitter:description" content="Medix Health - Advanced Multispecialty Clinic & Care Center. A clean, trust-inspiring healthcare layout with direct doctor appointment booking modal, department switcher, physician directory, and emergency banner.">
+  <meta name="twitter:image" content="./assets/images/og-preview.svg">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Standalone Production Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-['Plus_Jakarta_Sans',sans-serif] antialiased">
+
+  <header class="sticky top-0 z-50 border-b border-slate-200/90 bg-white/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 mr-6">
+        <span class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-bold text-xl text-white font-display shadow-lg shadow-primary">M</span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight font-display">Medix Health</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="index.html" class="text-primary font-semibold">Home</a>
+        <a href="about.html" class="hover:text-primary transition-colors">About</a>
+        <a href="services.html" class="hover:text-primary transition-colors">Services</a>
+        <a href="projects.html" class="hover:text-primary transition-colors">Projects</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">Contact</a>
+      </nav>
+
+      <div class="hidden sm:flex items-center gap-4">
+        <a href="contact.html" class="px-5 py-2.5 rounded-xl bg-primary text-white font-semibold text-sm hover:bg-primary-hover transition-colors shadow-lg shadow-primary">
+          Get Started
+        </a>
+      </div>
+
+      <button id="mobileMenuBtn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav" class="md:hidden p-2.5 rounded-xl border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+      </button>
+    </div>
+
+    <!-- Accessible Mobile Navigation -->
+    <nav id="mobileNav" class="hidden md:hidden border-t border-slate-200 bg-white/98 shadow-2xl px-6 py-6 flex-col gap-4 shadow-2xl backdrop-blur-xl transition-all">
+      <a href="index.html" class="text-primary font-semibold text-base py-1">Home</a>
+      <a href="about.html" class="text-slate-600 hover:text-primary text-base py-1">About</a>
+      <a href="services.html" class="text-slate-600 hover:text-primary text-base py-1">Services</a>
+      <a href="projects.html" class="text-slate-600 hover:text-primary text-base py-1">Projects</a>
+      <a href="contact.html" class="text-slate-600 hover:text-primary text-base py-1">Contact</a>
+      <a href="contact.html" class="mt-2 w-full text-center py-3 rounded-xl bg-primary text-white font-bold text-sm shadow-lg shadow-primary">Get Started</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-20 pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-semibold uppercase tracking-wider mb-6">
+        <span>✨</span> Advanced Multispecialty Clinic & Care Center
+      </div>
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 tracking-tight max-w-5xl mx-auto leading-[1.1] mb-6 font-display">
+        World-Class Compassionate Healthcare & Diagnostics
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-10">
+        Dedicated medical specialists, cutting-edge diagnostic technology, and convenient same-day online appointment scheduling.
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="services.html#bookingSection" class="px-8 py-4 rounded-xl bg-primary text-white font-semibold hover:bg-primary-hover transition-all shadow-xl shadow-primary">
+          Book Doctor Appointment
+        </a>
+        <a href="services.html" class="px-8 py-4 rounded-xl border border-slate-300 bg-white text-slate-700 font-semibold hover:bg-slate-50 hover:border-slate-400 shadow-sm transition-all">
+          Explore Clinical Specialties
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Grid -->
+  <section class="py-24 border-t border-slate-200/80 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-bold text-slate-900 mb-4 font-display">Clinical Excellence & Compassionate Care</h2>
+        <p class="text-slate-500">Discover why patients and families trust Medix Health for comprehensive clinical treatment and wellness.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-primary/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 text-primary flex items-center justify-center font-bold text-xl mb-6">01</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Board-Certified Specialists</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Fellowship-trained physicians across cardiology, neurology, orthopedics, and pediatric specialties.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-primary/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 text-primary flex items-center justify-center font-bold text-xl mb-6">02</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Advanced Diagnostic Imaging</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Next-generation 3T MRI, low-dose dual-source CT, ultrasound, and accredited pathology laboratories.</p>
+        </div>
+        <div class="p-8 rounded-2xl border border-slate-200 bg-white shadow-sm hover:border-primary/50 transition-all">
+          <div class="w-12 h-12 rounded-xl bg-primary/10 border border-primary/20 text-primary flex items-center justify-center font-bold text-xl mb-6">03</div>
+          <h3 class="text-xl font-bold text-slate-900 mb-3 font-display">Same-Day Urgent Care & Telehealth</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Direct appointments, online patient portal access, virtual consultations, and 24/7 clinical nurse triaging.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-slate-200 bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+      <div class="flex items-center gap-3 mr-6">
+        <span class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center font-bold text-xs text-white">M</span>
+        <p>© 2026 Medix Health. All rights reserved.</p>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="about.html" class="hover:text-slate-600 transition-colors">About</a>
+        <a href="services.html" class="hover:text-slate-600 transition-colors">Services</a>
+        <a href="projects.html" class="hover:text-slate-600 transition-colors">Projects</a>
+        <a href="contact.html" class="hover:text-slate-600 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Our Heritage & Ateliers | Aura Lifestyle - Minimalist Goods</title>
+  <meta name="description" content="Discover Aura Lifestyle's ethos of slow living, ethically partnered small-batch artisans, and sustainable materials for the home.">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="About Our Heritage & Ateliers | Aura Lifestyle - Minimalist Goods">
+  <meta property="og:description" content="Learn about Aura Lifestyle's mission, leadership team, industry credentials, and proven track record in modern ecommerce store.">
+  <meta property="og:image" content="./assets/images/og-preview.svg">
+  <meta property="og:image:alt" content="Aura Lifestyle - About Us">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="About Our Heritage & Ateliers | Aura Lifestyle - Minimalist Goods">
+  <meta name="twitter:description" content="Learn about Aura Lifestyle's mission, leadership team, industry credentials, and proven track record in modern ecommerce store.">
+  <meta name="twitter:image" content="./assets/images/og-preview.svg">
+
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Standalone Production Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-['Plus_Jakarta_Sans',sans-serif] antialiased">
+
+    <header class="sticky top-0 z-50 border-b border-slate-200/90 bg-white/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 mr-6">
+        <span class="w-10 h-10 rounded-xl bg-primary flex items-center justify-center font-bold text-xl text-white font-display shadow-lg shadow-primary">A</span>
+        <span class="text-xl font-bold text-slate-900 tracking-tight font-display">Aura Lifestyle</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
+        <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+        <a href="about.html" class="text-primary font-semibold">About</a>
+        <a href="services.html" class="hover:text-primary transition-colors">Collections</a>
+        <a href="projects.html" class="hover:text-primary transition-colors">Lookbook</a>
+        <a href="contact.html" class="hover:text-primary transition-colors">Concierge</a>
+      </nav>
+
+      <div class="flex items-center gap-3 mr-6">
+        <!-- Cart Drawer Trigger Button -->
+        <button type="button" data-cart-trigger aria-label="Shopping Cart" class="relative p-2.5 rounded-xl border border-slate-200 bg-white hover:border-slate-300 text-slate-700 hover:text-primary transition-all shadow-sm flex items-center gap-2">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          <span class="text-xs font-bold hidden sm:inline">Bag</span>
+          <span data-cart-count class="px-1.5 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold leading-none shadow-sm">0</span>
+        </button>
+
+        <a href="services.html" class="hidden sm:inline-flex px-5 py-2.5 rounded-xl bg-primary text-white font-semibold text-sm hover:bg-primary-hover transition-colors shadow-lg shadow-primary">
+          Shop Catalog
+        </a>
+
+        <button id="mobileMenuBtn" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav" class="md:hidden p-2.5 rounded-xl border border-slate-200 bg-white text-slate-600 hover:text-slate-900 hover:border-slate-300 shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-primary">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Accessible Mobile Navigation -->
+    <nav id="mobileNav" class="hidden md:hidden border-t border-slate-200 bg-white/98 shadow-2xl px-6 py-6 flex-col gap-4 backdrop-blur-xl transition-all">
+      <a href="index.html" class="text-slate-600 hover:text-primary text-base py-1">Home</a>
+      <a href="about.html" class="text-slate-600 hover:text-primary text-base py-1">About</a>
+      <a href="services.html" class="text-slate-600 hover:text-primary text-base py-1">Collections</a>
+      <a href="projects.html" class="text-slate-600 hover:text-primary text-base py-1">Lookbook</a>
+      <a href="contact.html" class="text-slate-600 hover:text-primary text-base py-1">Concierge</a>
+      <button type="button" data-cart-trigger class="w-full text-center py-3 rounded-xl border border-slate-200 bg-white text-slate-800 font-bold text-sm shadow-sm flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+        <span>View Shopping Bag</span>
+        <span data-cart-count class="px-1.5 py-0.5 rounded-full bg-primary text-white text-[10px] font-bold">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+    <div class="text-center mb-16">
+      <span class="text-xs font-bold text-primary uppercase tracking-widest">Our Heritage & Mission</span>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 mt-2 mb-4 font-display">Mindful Living Through Curated Craft</h1>
+      <p class="text-slate-600 text-lg leading-relaxed max-w-3xl mx-auto">Founded on the belief that everyday rituals deserve beauty and intention, Aura Lifestyle connects independent master artisans with homes seeking timeless, conscious design.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+      <div class="p-8 rounded-2xl border border-slate-200 bg-white shadow-sm text-center">
+        <div class="text-4xl font-extrabold text-primary mb-2 font-display">100%</div>
+        <div class="text-sm font-semibold text-slate-900">Sustainably Sourced</div>
+        <p class="text-xs text-slate-500 mt-2">Organic fibers, non-toxic glazes, and FSC-certified timber in every piece.</p>
+      </div>
+      <div class="p-8 rounded-2xl border border-slate-200 bg-white shadow-sm text-center">
+        <div class="text-4xl font-extrabold text-emerald-500 mb-2 font-display">42+</div>
+        <div class="text-sm font-semibold text-slate-900">Independent Ateliers</div>
+        <p class="text-xs text-slate-500 mt-2">Boutique ceramicists, weavers, and metalworkers partnered worldwide.</p>
+      </div>
+      <div class="p-8 rounded-2xl border border-slate-200 bg-white shadow-sm text-center">
+        <div class="text-4xl font-extrabold text-amber-500 mb-2 font-display">0%</div>
+        <div class="text-sm font-semibold text-slate-900">Net Carbon Footprint</div>
+        <p class="text-xs text-slate-500 mt-2">Climate-neutral shipping and 100% plastic-free compostable packaging.</p>
+      </div>
+    </div>
+
+    <div class="p-10 rounded-3xl border border-slate-200 bg-white shadow-sm">
+      <h3 class="text-2xl font-bold text-slate-900 mb-4 font-display">The Slow Living & Ethical Craft Ethos</h3>
+      <p class="text-slate-600 leading-relaxed mb-6">We reject mass production and seasonal obsolescence. Every item in our catalog is created in small limited batches, designed to develop a natural patina over decades, and manufactured in equitable working conditions with fair living wages.</p>
+      <a href="services.html" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-sm transition-all shadow-lg shadow-primary">Explore Our Collections</a>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-200 bg-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-sm text-slate-500">
+      <div class="flex items-center gap-3 mr-6">
+        <span class="w-7 h-7 rounded-lg bg-primary flex items-center justify-center font-bold text-xs text-white">A</span>
+        <p>© 2026 Aura Lifestyle. All rights reserved.</p>
+      </div>
+      <div class="flex flex-wrap items-center gap-6">
+        <a href="index.html" class="hover:text-slate-600 transition-colors">Home</a>
+        <a href="about.html" class="hover:text-slate-600 transition-colors">About</a>
+        <a href="services.html" class="hover:text-slate-600 transition-colors">Collections</a>
+        <a href="projects.html" class="hover:text-slate-600 transition-colors">Lookbook</a>
+        <a href="contact.html" class="hover:text-slate-600 transition-colors">Concierge</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <!-- Cart Drawer Backdrop -->
+  <div id="cartBackdrop" class="drawer-backdrop drawer-backdrop-closed"></div>
+
+  <!-- Cart Drawer Panel -->
+  <aside id="cartDrawer" class="drawer-panel drawer-closed" aria-labelledby="cartTitle" role="dialog" aria-modal="true">
+    <div class="p-6 border-b border-slate-200 flex items-center justify-between">
+      <div class="flex items-center gap-3 mr-6">
+        <h3 id="cartTitle" class="text-xl font-bold text-slate-900 font-display">Shopping Bag</h3>
+        <span id="cartHeaderCount" class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-slate-100 text-slate-700">0 items</span>
+      </div>
+      <button id="closeCartBtn" type="button" aria-label="Close cart" class="p-2 text-slate-400 hover:text-slate-700 rounded-xl hover:bg-slate-100 transition-colors">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+      </button>
+    </div>
+
+    <!-- Items List Container -->
+    <div id="cartItemsContainer" class="flex-1 overflow-y-auto p-6 space-y-4">
+      <!-- Dynamically populated via JS -->
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-6 border-t border-slate-200 bg-slate-50/90">
+      <div class="flex justify-between items-center mb-2">
+        <span class="text-sm font-medium text-slate-600">Estimated Subtotal</span>
+        <span id="cartSubtotal" class="text-xl font-extrabold text-slate-900 font-display">$0.00</span>
+      </div>
+      <p class="text-[11px] text-slate-500 mb-4">Complimentary climate-neutral worldwide shipping applied on checkout.</p>
+      <button id="checkoutBtn" type="button" class="w-full py-3.5 rounded-xl bg-primary hover:bg-primary-hover text-white font-bold text-sm shadow-xl shadow-primary transition-all flex items-center justify-center gap-2">
+        <span>Proceed to Checkout</span>
+        <span aria-hidden="true">→</span>
+      </button>
+      <div id="checkoutSuccess" class="hidden mt-3 p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-center text-xs font-semibold">
+        🎉 Order confirmed! Test transaction processed successfully.
+      </div>
+    </div>
+  </aside>
+</body>
+</html>

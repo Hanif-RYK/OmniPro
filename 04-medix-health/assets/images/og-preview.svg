@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" fill="none">
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="60%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+    <radialGradient id="ogGlow" cx="85%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#0d9488" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0d9488" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#ogGrad)"/>
+  <rect width="1200" height="630" fill="url(#ogGlow)"/>
+  <rect x="60" y="60" width="1080" height="510" rx="28" stroke="#334155" stroke-width="2" fill="#0f172a" fill-opacity="0.5"/>
+  <rect x="110" y="115" width="56" height="56" rx="14" fill="#0d9488"/>
+  <text x="138" y="152" font-family="system-ui, sans-serif" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">M</text>
+  <text x="182" y="152" font-family="system-ui, sans-serif" font-size="24" font-weight="800" fill="#ffffff" letter-spacing="0.5">Medix Health</text>
+  <rect x="110" y="200" width="260" height="34" rx="17" fill="#0d9488" fill-opacity="0.15" stroke="#0d9488" stroke-opacity="0.35"/>
+  <text x="240" y="222" font-family="system-ui, sans-serif" font-size="12" font-weight="800" fill="#0d9488" text-anchor="middle" letter-spacing="1">HEALTHCARE & MEDICAL DEMO</text>
+  <text x="110" y="310" font-family="system-ui, sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-1">Medix Health - Healthcare & Medical</text>
+  <text x="110" y="375" font-family="system-ui, sans-serif" font-size="22" font-weight="500" fill="#94a3b8">Advanced Multispecialty Clinic & Care Center</text>
+  <line x1="110" y1="440" x2="1030" y2="440" stroke="#334155" stroke-width="1"/>
+  <text x="110" y="495" font-family="system-ui, sans-serif" font-size="16" font-weight="600" fill="#64748b">Responsive HTML5 • Standalone CSS • Commercial Template</text>
+  <text x="1030" y="495" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#0d9488" text-anchor="end">OmniPro Template Suite</text>
+</svg>
