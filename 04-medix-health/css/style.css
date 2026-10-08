@@ -194,3 +194,15 @@ body {
 body.page-fade-out {
   opacity: 0 !important;
 }
+
+/* Mobile nav: hide the scrollbar and fade the right edge to hint at more links */
+@media (max-width: 699px) {
+  header nav:not(#mobileNav) {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    padding-right: 1.5rem !important;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent) !important;
+    mask-image: linear-gradient(to right, #000 85%, transparent) !important;
+  }
+  header nav:not(#mobileNav)::-webkit-scrollbar { display: none !important; height: 0 !important; }
+}

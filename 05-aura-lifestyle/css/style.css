@@ -211,3 +211,15 @@ body.page-fade-out {
   header [data-cart-trigger] { display: inline-flex !important; align-items: center !important; gap: 0.35rem !important; padding: 0.45rem 0.6rem !important; }
   header [data-cart-trigger] svg { width: 1.25rem !important; height: 1.25rem !important; flex-shrink: 0 !important; }
 }
+
+/* Mobile nav: hide the scrollbar and fade the right edge to hint at more links */
+@media (max-width: 699px) {
+  header nav:not(#mobileNav) {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    padding-right: 1.5rem !important;
+    -webkit-mask-image: linear-gradient(to right, #000 85%, transparent) !important;
+    mask-image: linear-gradient(to right, #000 85%, transparent) !important;
+  }
+  header nav:not(#mobileNav)::-webkit-scrollbar { display: none !important; height: 0 !important; }
+}
